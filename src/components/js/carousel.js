@@ -34,7 +34,7 @@ console.log(this.props.carouselItems);
         <Row className="justify-content-between align-items-center vh-60">
           <div className="col-md-5">
             <h1 className="text-white">Events Happening Around you!</h1>
-            <p className="text-white">We fetch the web to find you events that are happening around you.</p>
+            <p className="text-white">We fetch the web to find you events that are happening around you - particularly in Helsinki, Vantaa and Espoo.</p>
             <Button className="btn-sm btn-round" value="food" onClick={this.props.handleAll}><i className="fas fa-align-left links-icon"></i> View Featured Events</Button>
           </div>
           <div className="col-md-6">
