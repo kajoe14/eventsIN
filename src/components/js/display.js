@@ -144,7 +144,11 @@ class Display extends Component {
         <Input id="event" placeholder="Select an Event" options={tagArray} handleChange={this.fetchTag}/>
         <Links handleClick={this.fetchTag} handleAll={() => this.nextResults()} />
         <div className="mt-4">
-          <Row><Col md={12}><h1>Are you in search of activities or events to particpate in?</h1></Col></Row>
+          <Row>
+            <Col md={12}>
+              <h1 className="main-header">Are you in search of activities or events to particpate in?</h1>
+            </Col>
+          </Row>
           <div className="flex-container"> {events} </div>
           {this.state.isloaded ? (
             <Row className="justify-content-center">

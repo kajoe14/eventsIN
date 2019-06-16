@@ -26,3 +26,9 @@
   margin-top: 15px;
   width: 150px;
 }
+
+.main-header {
+  display: flex;
+  justify-content: center !important;
+  color: #fcfcfc !important
+}
