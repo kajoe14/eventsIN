@@ -5,6 +5,7 @@ import Header from "./header.js";
 import Cards from "./cards.js";
 import ControlledCarousel from "./carousel.js";
 import Row from "react-bootstrap/Row";
+import Col from 'react-bootstrap/Col';
 import Event from "./event.js";
 import Links from "./links.js";
 import FooterPagePro from "./Footer.js";
@@ -143,6 +144,7 @@ class Display extends Component {
         <Input id="event" placeholder="Select an Event" options={tagArray} handleChange={this.fetchTag}/>
         <Links handleClick={this.fetchTag} handleAll={() => this.nextResults()} />
         <div className="mt-4">
+          <Row><Col md={12}><h1>Are you in search of activities or events to particpate in?</h1></Col></Row>
           <div className="flex-container"> {events} </div>
           {this.state.isloaded ? (
             <Row className="justify-content-center">
