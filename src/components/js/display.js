@@ -13,6 +13,7 @@ import "../style/search.css";
 import "../style/display.css";
 import "../style/carousel.css";
 import "../style/carousel.css";
+import "../style/links.css";
 
 
 
@@ -153,15 +154,15 @@ class Display extends Component {
           {this.state.isloaded ? (
             <Row className="justify-content-center">
             <Search
-            className="bbtn"
-            label="Back"
+            className="event-tags-tag btn-sm btn-round"
+            label="Previous"
             handleClick={() => this.prevResults()}
-            />
+            ><i className="fas fa-prev links-icon"></i></Search>
             <Search
             label="Next"
-            className="bbtn"
+            className="event-tags-tag btn-sm btn-round"
             handleClick={() => this.nextResults()}
-            />
+            ><i className="fas fa-next links-icon"></i></Search>
             </Row>
           ) : (
             <div className="carousel">
